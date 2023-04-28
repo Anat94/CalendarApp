@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "EPITECH GET INFOS",
+    "version": "1.0",
+    "description": "A Chrome extension that get informations from intra.epitech.eu and send them to a server",
+    "host_permissions": [
+      "https://intra.epitech.eu/*",
+      "https://apich.free.beeceptor.com/*"
+    ],
+    "permissions": [
+        "declarativeNetRequest",
+        "webRequestAuthProvider",
+        "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "action":{
+        "default_popup": "index.html"
+    }
+  }
