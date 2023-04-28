@@ -1,0 +1,12 @@
+{
+    "event": [{
+        "2023-04-02": {
+            "description": "Easter Sunday",
+            "Start": "9:00am",
+            "End": "5:00pm",
+            "Localisation": "The Museum of Everything",
+            "Type": "Pompier"
+        },
+        "2023-04-03": "Easter Monday"
+    }]
+}
