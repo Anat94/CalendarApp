@@ -5,7 +5,7 @@
     "description": "A Chrome extension that get informations from intra.epitech.eu and send them to a server",
     "host_permissions": [
       "https://intra.epitech.eu/*",
-      "https://apich.free.beeceptor.com/*"
+      "http://localhost:3000/*"
     ],
     "permissions": [
         "declarativeNetRequest",
@@ -15,8 +15,5 @@
     "background": {
       "service_worker": "background.js",
       "type": "module"
-    },
-    "action":{
-        "default_popup": "index.html"
     }
   }
