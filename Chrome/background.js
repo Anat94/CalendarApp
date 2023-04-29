@@ -79,11 +79,11 @@ function selectOnlyRegisteredEvents(events)
 chrome.tabs.onUpdated.addListener( async (tabId, changeInfo, tab) => {
   if (url.includes(tab.url) && tab.status == "complete") {
     let date = await getNextMonthEvents();
-    let users = await getInfoUser();
+    let user = await getInfoUser();
     let alert = await getAlertNotification();
     let message = await getMessageNotification();
     let body = {
-      users: users,
+      user: user,
       alert: alert,
       message: message,
       date: date
